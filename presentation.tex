@@ -1,10 +1,12 @@
-\documentclass[12pt,a4paper]{beamer}
+\documentclass{beamer}
 \usepackage[ngerman]{babel}
 \usepackage[utf8x]{inputenc}
 \usepackage{ucs}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\usepackage{pgfpages}
+\pgfpagesuselayout{resize to}[a4paper,landscape]
 
 % Style
 \usetheme{Bergen}
@@ -19,20 +21,30 @@
 \subtitle{Distributed Version Control}
 \begin{document}
 
-\maketitle
+\begin{frame}
+ \maketitle
+\end{frame}
+
+
 
 \begin{frame}{Was bisher so geschah...}{Der Subversion-Workflow}
+
   \begin{columns}
-  \column{0.5\textwidth}	  
-	  \begin{itemize}
+
+    \column{0.5\textwidth}	  
+      \begin{itemize}
     	\item Zentrales Repository
-    \item ``Commitzwang''
-    \item Verbindung zum Repository
-    \item teure Branches
-    \item langsam
-  \end{itemize}
-	\column{0.5\textwidth}	  
-	  \includegraphics[width=1\textwidth]{./images/holy-repo.png}	  	
+	\item ``Commitzwang''
+	\item Verbindung zum Repository
+	\item teure Branches
+	\item langsam
+      \end{itemize}
+
+    \column{0.5\textwidth}
+      \begin{figure}
+       \includegraphics[width=1\textwidth]{./images/holy-repo.png}
+      \end{figure}
+
   \end{columns}
 \end{frame}
 
@@ -46,6 +58,26 @@
     \item verschiedene Workflows
   \end{itemize}
 \end{frame}
+
+
+\begin{frame}
+  \begin{figure}
+   \includegraphics[width=1.0\textwidth]{./images/svn-timeline.png}
+  \end{figure}
+
+  \begin{figure}
+   \includegraphics[width=1.0\textwidth]{./images/git-timeline.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+ \begin{figure}
+  \includegraphics[width=1.0\textwidth]{./images/file-status-lifecycle.png}
+ \end{figure}
+
+\end{frame}
+
+
 
 \begin{frame}[<+->]{Und bei Git? (Forts.)}{}
   \begin{itemize}

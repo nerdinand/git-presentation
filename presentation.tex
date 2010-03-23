@@ -6,6 +6,7 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{pgfpages}
+
 \pgfpagesuselayout{resize to}[a4paper,landscape]
 
 % Style
@@ -61,7 +62,7 @@
 \end{frame}
 
 
-\begin{frame}
+\begin{frame}{SVN vs. Git: Histories}
   \begin{figure}
    \includegraphics[width=0.90\textwidth]{./images/svn-timeline.png}
   \end{figure}
@@ -75,8 +76,32 @@
  \begin{figure}
   \includegraphics[width=0.90\textwidth]{./images/file-status-lifecycle.png}
  \end{figure}
+\end{frame}
+
+\begin{frame}{Workflows: Subversion}
+
+  \begin{figure}
+     \includegraphics[scale=1.0]{./images/workflow-svn.png}
+  \end{figure}
 
 \end{frame}
+
+\begin{frame}{Workflows: Integration Manager}
+ 
+  \begin{figure}
+     \includegraphics[scale=1.0]{./images/workflow-integration-manager.png}
+  \end{figure}
+
+\end{frame}
+
+\begin{frame}{Workflows: Dictator}
+ 
+  \begin{figure}
+     \includegraphics[width=0.95\textwidth]{./images/workflow-dictator.png}
+  \end{figure}
+
+\end{frame}
+
 
 \begin{frame}[<+->]{Wie alles begann}{}
   \begin{itemize}
@@ -109,10 +134,11 @@
     \item git blame
     \item git rebase
     \item git cherry-pick
+    \item git archive
   \end{itemize}
 \end{frame}
 
-\begin{frame}{Github.com}
+\begin{frame}[<+->]]{Github.com}
 \begin{itemize}
     \item ``Social Coding", vergleichbar mit Sourceforge
 	\item Feb. 2008

@@ -1,0 +1,64 @@
+### Erstes Beispiel
+
+mkdir projekt
+cd projekt
+git init
+# File first.txt erstellen und mit Inhalt füllen
+git status
+git add first.txt
+git status
+git commit -m "Initial commit."
+git status
+
+### Editing
+
+# Edit first.txt
+git status
+git diff
+git add first.txt
+git diff
+git commit -m "Changed a line."
+
+### Github
+
+
+
+### Branching
+
+git branch
+git branch feature-x
+git branch
+git checkout feature-x
+# File feature-x erstellen und füllen.
+git add feature-x.txt
+git commit -m "Start work on feature x."
+git branch
+git checkout master
+ls
+git checkout feature-x
+ls
+git checkout master
+git merge feature-x
+
+### Log
+
+git log
+git log -n3
+
+### Die kleinen Helferlein
+
+# Alles was noch nicht committed wurde zurücksetzen
+git reset --hard
+
+# File so zurücksetzen, wie es im origin/master ist
+git checkout file.txt
+
+# Commit message ändern
+git commit --amend
+
+# .gitignore zeigen
+
+# Wer hat was verbrochen?
+git blame file.txt
+
+

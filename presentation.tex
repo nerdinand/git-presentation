@@ -26,13 +26,16 @@
  \maketitle
 \end{frame}
 
+\begin{frame}{Was bisher so geschah...}{Das Subversion Tagesgeschäft}
+ \begin{figure}
+       \includegraphics[width=0.9\textwidth]{./images/holy-repo.png}
+      \end{figure}
+\end{frame}
 
 
-\begin{frame}{Was bisher so geschah...}{Der Subversion-Workflow}
 
-  \begin{columns}
+\begin{frame}{Was bisher so geschah...}{Das Subversion Tagesgeschäft}
 
-    \column{0.5\textwidth}	  
       \begin{itemize}[<+->]
     	\item Zentrales Repository
 	\item ``Commitzwang''
@@ -41,17 +44,11 @@
 	\item langsam
       \end{itemize}
 
-    \column{0.5\textwidth}
-      \begin{figure}
-       \includegraphics[width=1\textwidth]{./images/holy-repo.png}
-      \end{figure}
-
-  \end{columns}
 \end{frame}
 
 \begin{frame}[<+->]{Und bei Git?}{}
   \begin{itemize}
-    \item alles lokal
+    \item (fast) alles lokal
     \item schnell
     \item klein
     \item kein ``Commitzwang'' (da commits lokal)
@@ -122,6 +119,14 @@
   \begin{itemize}
     \item jedes Objekt SHA1
     \item ``content not files''
+    \item Vier Git-Objekte
+    \begin{itemize}
+     \item blob
+     \item tree
+     \item commit
+     \item tag
+    \end{itemize}
+
   \end{itemize}
 \end{frame}
 
@@ -140,14 +145,14 @@
 
 \begin{frame}[<+->]{Kleine Helferlein}{}
   \begin{itemize}
-    \item git reset --hard # Vorsicht!
+    \item git reset --hard \# Vorsicht!
     \item git checkout file.txt
     \item git commit --amend
     \item .gitignore
   \end{itemize}
 \end{frame}
 
-\begin{frame}[<+->]]{Github.com}
+\begin{frame}[<+->]{Github.com}
 \begin{itemize}
     \item ``Social Coding", vergleichbar mit Sourceforge
 	\item Feb. 2008

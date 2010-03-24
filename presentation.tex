@@ -23,30 +23,31 @@
 \begin{document}
 
 \begin{frame}
- \maketitle
+ \titlepage
 \end{frame}
 
 \begin{frame}{Was bisher so geschah...}{Das Subversion Tagesgeschäft}
  \begin{figure}
-       \includegraphics[width=0.9\textwidth]{./images/holy-repo.png}
-      \end{figure}
+  \includegraphics[width=0.9\textwidth]{./images/holy-repo.png}
+ \end{figure}
 \end{frame}
-
-
 
 \begin{frame}{Was bisher so geschah...}{Das Subversion Tagesgeschäft}
 
-      \begin{itemize}[<+->]
-    	\item Zentrales Repository
-	\item ``Commitzwang''
-	\item Verbindung zum Repository
-	\item teure Branches
-	\item langsam
-      \end{itemize}
+  %\begin{itemize}[<+->]
+  \begin{itemize}
+    \item Zentrales Repository
+    \item ``Commitzwang''
+    \item Verbindung zum Repository
+    \item teure Branches
+    \item langsam
+  \end{itemize}
 
 \end{frame}
 
-\begin{frame}[<+->]{Und bei Git?}{}
+%\begin{frame}[<+->]{Und bei Git?}{}
+\begin{frame}{Und bei Git?}{}
+
   \begin{itemize}
     \item (fast) alles lokal
     \item schnell
@@ -56,23 +57,41 @@
     \item verschiedene Workflows
     \item billige lokale Branches
   \end{itemize}
-\end{frame}
 
-
-\begin{frame}{SVN vs. Git: Histories}
-  \begin{figure}
-   \includegraphics[width=0.90\textwidth]{./images/svn-timeline.png}
-  \end{figure}
-
-  \begin{figure}
-   \includegraphics[width=0.90\textwidth]{./images/git-timeline.png}
-  \end{figure}
 \end{frame}
 
 \begin{frame}
+
+  \begin{block}{Erstes Beispiel}
+    \begin{itemize}
+      \item git init
+      \item git status
+      \item git add
+      \item git commit
+      \item git log
+    \end{itemize}
+  \end{block} 
+
+\end{frame}
+
+\begin{frame}{SVN vs. Git: Histories}
+
+  \begin{figure}
+   \includegraphics[width=0.95\textwidth]{./images/svn-timeline.png}
+  \end{figure}
+
+  \begin{figure}
+   \includegraphics[width=0.95\textwidth]{./images/git-timeline.png}
+  \end{figure}
+
+\end{frame}
+
+\begin{frame}
+
  \begin{figure}
   \includegraphics[width=0.90\textwidth]{./images/file-status-lifecycle.png}
  \end{figure}
+
 \end{frame}
 
 \begin{frame}{Workflows: Subversion}
@@ -100,22 +119,22 @@
 \end{frame}
 
 
-\begin{frame}[<+->]{Wie alles begann}{}
+%\begin{frame}[<+->]{Wie alles begann}{}
+\begin{frame}{Wie alles begann}{}
+
   \begin{itemize}
     \item Linux kernel, BitKeeper
     \item Linus Torvalds
     \item Anforderungen: ähnlich wie Bitkeeper, Sicherheit, Effizienz
     \item 2005: Erste Version in 2 Wochen
     \item Wer verwendet Git? Git, Perl, Gnome, Qt, Ruby on Rails, Android, Wine, Fedora, Debian, X.org, VLC, ...
-
   \end{itemize}
-\end{frame}
-
-\begin{frame}{Erstes Beispiel}
 
 \end{frame}
 
-\begin{frame}[<+->]{Und sonst so?}{}
+%\begin{frame}[<+->]{Und sonst so?}{}
+\begin{frame}{Und sonst so?}{}
+
   \begin{itemize}
     \item jedes Objekt SHA1
     \item ``content not files''
@@ -126,11 +145,25 @@
      \item commit
      \item tag
     \end{itemize}
-
   \end{itemize}
+
 \end{frame}
 
-\begin{frame}[<+->]{Git für Fortgeschrittene}{}
+\begin{frame}
+
+  \begin{block}{Branching}
+    \begin{itemize}
+      \item git branch
+      \item git checkout
+      \item git merge
+    \end{itemize}
+  \end{block} 
+
+\end{frame}
+
+%\begin{frame}[<+->]{Git für Fortgeschrittene}{}
+\begin{frame}{Git für Fortgeschrittene}{}
+
   \begin{itemize}
     \item git bisect
     \item git fsck / git gc
@@ -141,19 +174,26 @@
     \item git cherry-pick
     \item git archive
   \end{itemize}
+
 \end{frame}
 
-\begin{frame}[<+->]{Kleine Helferlein}{}
+%\begin{frame}[<+->]{Kleine Helferlein}{}
+\begin{frame}{Kleine Helferlein}{}
+
   \begin{itemize}
-    \item git reset --hard \# Vorsicht!
     \item git checkout file.txt
     \item git commit --amend
-    \item .gitignore
+    \item .gitignore file
+    \item gitk (Tk) / qgit (Qt) / gitx (Mac)
+    \item git reset --hard \# Vorsicht!
   \end{itemize}
+
 \end{frame}
 
-\begin{frame}[<+->]{Github.com}
-\begin{itemize}
+%\begin{frame}[<+->]{Github.com}
+\begin{frame}{Github.com}
+
+  \begin{itemize}
     \item ``Social Coding", vergleichbar mit Sourceforge
 	\item Feb. 2008
 	\item 222000 Coder, über 726000 Repositories
@@ -166,6 +206,11 @@
 	  \item verschiedene JavaScript-Projekte
 	\end{itemize}
   \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \Huge{Fragen?}
 \end{frame}
 
 

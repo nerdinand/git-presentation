@@ -30,6 +30,8 @@ git branch feature-x
 git branch
 git checkout feature-x
 # File feature-x.txt erstellen und füllen.
+# direkter Weg: git checkout -b feature-x
+
 git add feature-x.txt
 git commit -m "Start work on feature x."
 git branch

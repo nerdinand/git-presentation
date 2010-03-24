@@ -1,3 +1,5 @@
 http://hades.name/blog/2010/01/17/git-your-friend-not-foe/ 
 http://ktown.kde.org/~zrusin/git/git-cheat-sheet.svg
 http://www.youtube.com/watch?v=8dhZ9BXQgc4
+http://whygitisbetterthanx.com/
+http://chaosradio.ccc.de/cre130.html
